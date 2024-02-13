@@ -1,4 +1,6 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+
 
 export const Dashboard = () => {
   return (
@@ -34,6 +36,10 @@ export const Dashboard = () => {
         <p className="text-white">Sales Chart</p>
         {/* recent Sales */}
         <p className="text-white">Recent Sales</p>
+        <Routes>
+          <Route path="/" element={<p>Dashboard</p>} />
+          <Route path="/store" element={<p>Store</p>} />
+        </Routes>
       </div>
     </div>
   )
